@@ -1,3 +1,7 @@
+altgeek_core:
+    resource: "@AltgeekCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
 altgeek_user:
     resource: "@AltgeekUserBundle/Resources/config/routing.yml"
     prefix:   /user

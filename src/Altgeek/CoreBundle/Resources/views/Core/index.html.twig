@@ -1,0 +1,35 @@
+{# app/Resources/views/layout.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% block title %}Watcha Doing ?{% endblock %}</title>
+
+  {% block stylesheets %}
+  {% endblock %}
+</head>
+
+<body>
+  <div class="container">
+    <div id="header">
+		{% block header %}
+		<h1> Homepage header </h1>
+		{% endblock %}
+	</div>
+
+	<div id="content" class="col-md-9">
+		{% block body %}
+		<h1> Homepage content </h1>
+		{% endblock %}
+	</div>
+
+    <div id="footer">
+		{% block footer %}
+		<h1> Homepage footer </h1>
+		{% endblock %}
+	</div>
+</body>
+</html>
