@@ -1,3 +1,6 @@
+altgeek_admin:
+    resource: "@AltgeekAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
 altgeek_oeuvre:
     resource: "@AltgeekOeuvreBundle/Resources/config/routing.yml"
     prefix:   /oeuvre

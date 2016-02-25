@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Altgeek\CoreBundle\AltgeekCoreBundle(),
             new Altgeek\PersonneBundle\AltgeekPersonneBundle(),
             new Altgeek\OeuvreBundle\AltgeekOeuvreBundle(),
+            new Altgeek\AdminBundle\AltgeekAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
