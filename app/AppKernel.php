@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Altgeek\UserBundle\AltgeekUserBundle(),
             new Altgeek\CoreBundle\AltgeekCoreBundle(),
+            new Altgeek\PersonneBundle\AltgeekPersonneBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
