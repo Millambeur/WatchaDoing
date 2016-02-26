@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+}
+
+#body {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.fin_float {
+	clear: both;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+p {
+	text-indent:50px;
+	line-height: 1.5;
+}
+
+a:link, a:hover, a:visited, a:active { 
+	text-decoration: none;
+} 
+
+/* ----- Top navigation ----- */
+
+
+/* ----- Footer ----- */
+#footer {
+	height: 125;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+/* ----- Articles ----- */
+
+
+/* Accueil */
+
+
+/* Contact */
