@@ -44,13 +44,13 @@ class Artist
     private $dateNaissance;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Altgeek\ArtistBundle\Entity\Nationality")
+     * @ORM\ManyToMany(targetEntity="Altgeek\ArtistBundle\Entity\Nationality")
      * @ORM\JoinColumn(nullable=true)
      */
     private $nationality;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Altgeek\ArtistBundle\Entity\Profession")
+     * @ORM\ManyToMany(targetEntity="Altgeek\ArtistBundle\Entity\Profession")
      * @ORM\JoinColumn(nullable=true)
      */
     private $profession;
