@@ -26,11 +26,24 @@ a:link, a:hover, a:visited, a:active {
 } 
 
 /* ----- Header ----- */
+#header {
+	height: 125px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	background-color: grey;
+}
 
+#header_menu ul li {
+	float: left;
+	width: 15%;
+}
 
 /* ----- Footer ----- */
 #footer {
-	height: 125;
+	height: 125px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
@@ -45,7 +58,9 @@ a:link, a:hover, a:visited, a:active {
 }
 
 /* ----- Articles ----- */
-
+.container {
+	padding-top: 125px;
+}
 
 /* Accueil */
 
