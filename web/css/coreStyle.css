@@ -1,8 +1,7 @@
 body {
 	margin: 0;
-}
-
-#body {
+	background-image: url(../images/grey_sandbag.png);
+	color: black;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
@@ -23,17 +22,23 @@ p {
 
 a:link, a:hover, a:visited, a:active { 
 	text-decoration: none;
+	color: black;
 } 
 
 /* ----- Header ----- */
 #header {
+	background-image: url(../images/grey_wash_wall.png);
+	color: white;
 	height: 125px;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	text-align: center;
-	background-color: grey;
+}
+
+#header a {
+	color: white;
 }
 
 #header_menu ul li {
@@ -43,23 +48,33 @@ a:link, a:hover, a:visited, a:active {
 
 /* ----- Footer ----- */
 #footer {
-	height: 125px;
+	background-image: url(../images/grey_wash_wall.png);
+	color: white;
+	height: 150px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	text-align: center;
-	background-color: grey;
+}
+
+#footer a {
+	color: white;
 }
 
 .footer_top {
 	float: left;
-	width: 30%;
+	width: 33%;
+}
+
+#footer_bottom {
+	margin-bottom: 25px;
 }
 
 /* ----- Articles ----- */
 .container {
-	padding-top: 125px;
+	padding-top: 150px;
+	margin: 0 5% 0 5%;
 }
 
 /* Accueil */
