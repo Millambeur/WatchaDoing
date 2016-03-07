@@ -2,6 +2,14 @@ altgeek_oeuvre_homepage:
     path:     /
     defaults: { _controller: AltgeekOeuvreBundle:Oeuvre:index }
 
+altgeek_oeuvre_view:
+    path:     /view/{id}
+    defaults: { _controller: AltgeekOeuvreBundle:Oeuvre:view }
+
+altgeek_oeuvre_add:
+    path:     /add
+    defaults: { _controller: AltgeekOeuvreBundle:Oeuvre:add }
+
 altgeek_oeuvre_movies:
     path:     /movies
     defaults: { _controller: AltgeekOeuvreBundle:Oeuvre:movies }

@@ -1,17 +1,18 @@
+altgeek_core:
+    resource: "@AltgeekCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
 altgeek_admin:
     resource: "@AltgeekAdminBundle/Resources/config/routing.yml"
     prefix:   /admin
+
 altgeek_oeuvre:
     resource: "@AltgeekOeuvreBundle/Resources/config/routing.yml"
     prefix:   /oeuvre
 
-altgeek_personne:
-    resource: "@AltgeekPersonneBundle/Resources/config/routing.yml"
-    prefix:   /personne
-
-altgeek_core:
-    resource: "@AltgeekCoreBundle/Resources/config/routing.yml"
-    prefix:   /
+altgeek_artist:
+    resource: "@AltgeekArtistBundle/Resources/config/routing.yml"
+    prefix:   /artist
 
 altgeek_user:
     resource: "@AltgeekUserBundle/Resources/config/routing.yml"

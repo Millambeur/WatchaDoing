@@ -1,3 +1,0 @@
-altgeek_personne_homepage:
-    path:     /
-    defaults: { _controller: AltgeekPersonneBundle:Personne:index }

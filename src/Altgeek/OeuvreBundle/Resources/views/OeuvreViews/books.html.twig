@@ -2,4 +2,8 @@
 
 	{% block body %}
 		<p>{{ 'Hello Books !'|trans }}</p>
+		<a href="{{ path('altgeek_oeuvre_view', {'id': oeuvre.id}) }}">
+        	{{ oeuvre.title }}
+      	</a>
+
 	{% endblock %}

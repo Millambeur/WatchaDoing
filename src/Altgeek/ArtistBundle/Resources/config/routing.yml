@@ -1,0 +1,3 @@
+altgeek_artisti_homepage:
+    path:     /
+    defaults: { _controller: AltgeekArtistBundle:Artist:index }

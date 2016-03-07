@@ -18,7 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Altgeek\UserBundle\AltgeekUserBundle(),
             new Altgeek\CoreBundle\AltgeekCoreBundle(),
-            new Altgeek\PersonneBundle\AltgeekPersonneBundle(),
+            new Altgeek\ArtistBundle\AltgeekArtistBundle(),
             new Altgeek\OeuvreBundle\AltgeekOeuvreBundle(),
             new Altgeek\AdminBundle\AltgeekAdminBundle(),
         );
