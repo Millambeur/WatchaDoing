@@ -1,3 +1,19 @@
 altgeek_oeuvre_homepage:
     path:     /
     defaults: { _controller: AltgeekOeuvreBundle:Oeuvre:index }
+
+altgeek_oeuvre_movies:
+    path:     /movies
+    defaults: { _controller: AltgeekOeuvreBundle:Oeuvre:movies }
+
+altgeek_oeuvre_tvshows:
+    path:     /tvshows
+    defaults: { _controller: AltgeekOeuvreBundle:Oeuvre:tvshows }
+
+altgeek_oeuvre_books:
+    path:     /books
+    defaults: { _controller: AltgeekOeuvreBundle:Oeuvre:books }
+
+altgeek_oeuvre_videogames:
+    path:     /videogames
+    defaults: { _controller: AltgeekOeuvreBundle:Oeuvre:videogames }

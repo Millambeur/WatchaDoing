@@ -10,4 +10,24 @@ class OeuvreController extends Controller
     {
         return $this->render('AltgeekOeuvreBundle:OeuvreViews:index.html.twig');
     }
+
+    public function moviesAction()
+    {
+        return $this->render('AltgeekOeuvreBundle:OeuvreViews:movies.html.twig');
+    }
+
+    public function tvshowsAction()
+    {
+        return $this->render('AltgeekOeuvreBundle:OeuvreViews:tvshows.html.twig');
+    }
+
+    public function booksAction()
+    {
+        return $this->render('AltgeekOeuvreBundle:OeuvreViews:books.html.twig');
+    }
+
+    public function videogamesAction()
+    {
+        return $this->render('AltgeekOeuvreBundle:OeuvreViews:videogames.html.twig');
+    }
 }
