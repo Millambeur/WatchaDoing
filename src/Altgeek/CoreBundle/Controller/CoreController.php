@@ -8,6 +8,6 @@ class CoreController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('AltgeekCoreBundle:CoreViews:index.html.twig');
+        return $this->render('AltgeekCoreBundle::index.html.twig');
     }
 }
