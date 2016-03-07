@@ -1,7 +1,37 @@
 {# app/Resources/views/footer.html.twig #}
 
 	{% block footer %}
-		<div id="footer">
+	<div id="footer">
+		<div id="footer_top">
+			<div id="footer_top_left" class="footer_top">
+				<div id="footer_top_left_title">
+					<p>Pages</p>
+				</div>
+				<ul>
+				    <li><a href="{{ path('altgeek_core_homepage') }}">Homepage</a></li>
+				</ul>
+			</div>
+			<div id="footer_top_middle" class="footer_top">
+				<div id="footer_top_middle_title">
+					<p>Partners</p>
+				</div>
+				<ul>
+				    <li><a href="{{ path('altgeek_core_homepage') }}">Homepage</a></li>
+				</ul>
+			</div>
+			<div id="footer_top_right" class="footer_top">
+				<div id="footer_top_right_title">
+					<p>About WatchaDoing</p>
+				</div>
+				<ul>
+				    <li><a href="{{ path('altgeek_core_homepage') }}">Homepage</a></li>
+				</ul>
+			</div>
+			<div class="fin_float">
+			</div>
+		</div>
+		<div id="footer-bottom">
 			<p>WatchaDoing - © Altgeek - 2016</p>
 		</div>
+	</div>
 	{% endblock %}

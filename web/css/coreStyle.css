@@ -25,7 +25,7 @@ a:link, a:hover, a:visited, a:active {
 	text-decoration: none;
 } 
 
-/* ----- Top navigation ----- */
+/* ----- Header ----- */
 
 
 /* ----- Footer ----- */
@@ -36,6 +36,12 @@ a:link, a:hover, a:visited, a:active {
 	bottom: 0;
 	left: 0;
 	text-align: center;
+	background-color: grey;
+}
+
+.footer_top {
+	float: left;
+	width: 30%;
 }
 
 /* ----- Articles ----- */
