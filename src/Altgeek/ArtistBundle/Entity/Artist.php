@@ -23,31 +23,10 @@ class Artist
     private $id;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\OnetoOne(targetEntity="Altgeek\CoreBundle\Entity\Person")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $name;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="surname", type="string", length=255)
-     */
-    private $surname;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="dateNaissance", type="datetime")
-     */
-    private $dateNaissance;
-
-    /**
-     * @ORM\ManyToMany(targetEntity="Altgeek\ArtistBundle\Entity\Nationality")
-     * @ORM\JoinColumn(nullable=true)
-     */
-    private $nationality;
+    private $person;
 
     /**
      * @ORM\ManyToMany(targetEntity="Altgeek\ArtistBundle\Entity\Profession")
@@ -64,98 +43,6 @@ class Artist
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set name
-     *
-     * @param string $name
-     * @return Artist
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string 
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * Set surname
-     *
-     * @param string $surname
-     * @return Artist
-     */
-    public function setSurname($surname)
-    {
-        $this->surname = $surname;
-
-        return $this;
-    }
-
-    /**
-     * Get surname
-     *
-     * @return string 
-     */
-    public function getSurname()
-    {
-        return $this->surname;
-    }
-
-    /**
-     * Set dateNaissance
-     *
-     * @param \DateTime $dateNaissance
-     * @return Artist
-     */
-    public function setDateNaissance($dateNaissance)
-    {
-        $this->dateNaissance = $dateNaissance;
-
-        return $this;
-    }
-
-    /**
-     * Get dateNaissance
-     *
-     * @return \DateTime 
-     */
-    public function getDateNaissance()
-    {
-        return $this->dateNaissance;
-    }
-
-    /**
-     * Set nationality
-     *
-     * @param \Altgeek\ArtistBundle\Entity\Nationality $nationality
-     * @return Artist
-     */
-    public function setNationality(Nationality $nationality = null)
-    {
-        $this->nationality = $nationality;
-
-        return $this;
-    }
-
-    /**
-     * Get nationality
-     *
-     * @return \Altgeek\ArtistBundle\Entity\Nationality 
-     */
-    public function getNationality()
-    {
-        return $this->nationality;
     }
 
     /**
@@ -179,5 +66,58 @@ class Artist
     public function getProfession()
     {
         return $this->profession;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->profession = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add profession
+     *
+     * @param \Altgeek\ArtistBundle\Entity\Profession $profession
+     * @return Artist
+     */
+    public function addProfession(\Altgeek\ArtistBundle\Entity\Profession $profession)
+    {
+        $this->profession[] = $profession;
+
+        return $this;
+    }
+
+    /**
+     * Remove profession
+     *
+     * @param \Altgeek\ArtistBundle\Entity\Profession $profession
+     */
+    public function removeProfession(\Altgeek\ArtistBundle\Entity\Profession $profession)
+    {
+        $this->profession->removeElement($profession);
+    }
+
+    /**
+     * Set person
+     *
+     * @param \Altgeek\CoreBundle\Entity\Person $person
+     * @return Artist
+     */
+    public function setPerson(\Altgeek\CoreBundle\Entity\Person $person)
+    {
+        $this->person = $person;
+
+        return $this;
+    }
+
+    /**
+     * Get person
+     *
+     * @return \Altgeek\CoreBundle\Entity\Person 
+     */
+    public function getPerson()
+    {
+        return $this->person;
     }
 }
