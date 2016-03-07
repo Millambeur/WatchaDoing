@@ -1,4 +1,5 @@
 <?php
+/* src/Altgeek/AdminBundle/AltgeekAdminBundle.php */
 
 namespace Altgeek\AdminBundle;
 

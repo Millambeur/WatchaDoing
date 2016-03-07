@@ -1,4 +1,5 @@
 <?php
+/* src/Altgeek/OeuvreBundle/AltgeekOeuvreBundle.php */
 
 namespace Altgeek\OeuvreBundle;
 

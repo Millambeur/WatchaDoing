@@ -1,4 +1,5 @@
 <?php
+/* src/Altgeek/UserBundle/Controller/UserController.php */
 
 namespace Altgeek\UserBundle\Controller;
 

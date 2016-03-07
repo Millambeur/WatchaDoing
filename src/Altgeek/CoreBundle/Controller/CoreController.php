@@ -1,4 +1,5 @@
 <?php
+/* src/Altgeek/CoreBundle/Controller/CoreController.php */
 
 namespace Altgeek\CoreBundle\Controller;
 

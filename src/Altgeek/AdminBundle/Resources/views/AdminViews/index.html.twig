@@ -1,1 +1,6 @@
-{{ 'Hello Admin !'|trans }}
+{# src/Altgeek/AdminBundle/Ressources/views/AdminViews/index.html.twig #}
+{% extends "AltgeekCoreBundle::index.html.twig" %}
+
+	{% block body %}
+		<p>{{ 'Hello Admin !'|trans }}</p>
+	{% endblock %}
