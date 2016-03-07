@@ -141,7 +141,7 @@ class Artist
      * @param \Altgeek\ArtistBundle\Entity\Nationality $nationality
      * @return Artist
      */
-    public function setNationality(\Altgeek\ArtistBundle\Entity\Nationality $nationality = null)
+    public function setNationality(Nationality $nationality = null)
     {
         $this->nationality = $nationality;
 
@@ -164,7 +164,7 @@ class Artist
      * @param \Altgeek\ArtistBundle\Entity\Profession $profession
      * @return Artist
      */
-    public function setProfession(\Altgeek\ArtistBundle\Entity\Profession $profession = null)
+    public function setProfession(Profession $profession = null)
     {
         $this->profession = $profession;
 

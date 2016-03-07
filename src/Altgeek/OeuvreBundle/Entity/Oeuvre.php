@@ -70,6 +70,12 @@ class Oeuvre
      */
     private $sousOeuvre;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="Altgeek\OeuvreBundle\Entity\Category")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $category;
+
 
     /**
      * Get id
@@ -240,5 +246,45 @@ class Oeuvre
     public function getSousOeuvre()
     {
         return $this->sousOeuvre;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->category = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add category
+     *
+     * @param \Altgeek\ArtistBundle\Entity\Category $category
+     * @return Oeuvre
+     */
+    public function addCategory(Category $category)
+    {
+        $this->category[] = $category;
+
+        return $this;
+    }
+
+    /**
+     * Remove category
+     *
+     * @param \Altgeek\ArtistBundle\Entity\Category $category
+     */
+    public function removeCategory(Category $category)
+    {
+        $this->category->removeElement($category);
+    }
+
+    /**
+     * Get category
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCategory()
+    {
+        return $this->category;
     }
 }
